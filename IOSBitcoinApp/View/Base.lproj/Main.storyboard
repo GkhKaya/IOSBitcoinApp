@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mtc-Oc-KVZ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="FI2-fA-jro">
             <objects>
-                <viewController id="Mtc-Oc-KVZ" customClass="ViewController" customModule="ByteCoin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mtc-Oc-KVZ" customClass="ViewController" customModule="IOSBitcoinApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ih-Wt-6TP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +96,11 @@
                             <constraint firstItem="LWG-Q7-G17" firstAttribute="trailing" secondItem="GGh-fq-yqt" secondAttribute="trailing" id="nur-hd-Cwq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bitcoinLabel" destination="WSY-rb-az5" id="KKh-PQ-Aio"/>
+                        <outlet property="currencyLabel" destination="6Ho-3S-ZLI" id="AWB-tf-DI4"/>
+                        <outlet property="currencyPicker" destination="ES4-cR-rE2" id="uj7-Wn-6ee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wbp-xB-o7L" sceneMemberID="firstResponder"/>
             </objects>
